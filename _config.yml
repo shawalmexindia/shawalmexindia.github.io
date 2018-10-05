@@ -1,0 +1,23 @@
+title: Shaw Almex
+email: shaw@almexindia.com
+phone: +91-129-2258676, +91-129-2274624
+fax: +91-129-2275567
+
+exclude: ['README.markdown','/assets/cs/sass']
+
+sass:
+  sass_dir: assets/css
+  style: compressed
+
+plugins:
+  - jekyll-redirect-from
+
+collections:
+  vulcanizing_machine:
+    output: true
+  industrial_rubber_press:
+    output: true
+  lamination_presses:
+    output: true
+  tools_and_accessories:
+    output: true

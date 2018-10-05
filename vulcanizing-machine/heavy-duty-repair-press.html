@@ -1,0 +1,19 @@
+---
+layout: vulcanizing-machine
+title: Vulcanizing Machine
+permalink: /vulcanizing-machine/heavy-duty-repair-press/
+order: 1
+---
+
+{% for post in site.vulcanizing_machine %}
+  {% if post.categories contains "heavy-duty-repair-press" %}
+    <article>
+      <div class="cover">
+        <img src="{{ post.image }}" alt="">
+      </div>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      {{ post.short_desc | markdownify }}
+      <p><a class="bttn" href="{{ post.url }}">Read More</a></p>
+    </article>
+  {% endif %}
+{% endfor %}

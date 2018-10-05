@@ -1,0 +1,74 @@
+.flex
+  display: flex
+//   margin-left: -$base-spacing-unit
+// .flex > .flex
+  margin-left: 0
+// .flex > *:not(.flex)
+//   padding-left: $base-spacing-unit
+
+
+.flex-wrap
+  flex-wrap: wrap
+.flex-wrap-reverse
+  flex-wrap: wrap-reverse
+
+.flex-column
+  flex-direction: column
+.flex-reverse
+  flex-direction: row-reverse
+  .flex-column
+    flex-direction: column-reverse
+
+// Mobile only
+.palm-flex-column
+  @media screen and (max-width: 600px)
+    flex-direction: column
+
+// Laptop only
+.lap-flex-column
+  @media screen and (min-width: 600px)
+    flex-direction: column
+
+// Mobile and Laptop
+.portable-flex-column
+  @media screen and (max-width: 800px)
+    flex-direction: column
+
+.flex-center
+  align-items: center
+  justify-content: center
+
+
+.flex-ycenter
+  align-items: center
+.flex-xcenter
+  justify-content: center
+
+.flex-around
+  justify-content: space-around
+.flex-between
+  justify-content: space-between
+.flex-right
+  justify-content: flex-end
+
+.flex-baseline
+  align-items: baseline
+.flex-end
+  align-items: flex-end
+.flex-start
+  align-items: flex-start
+
+.self-center
+  align-self: center
+.self-start
+  align-self: flex-start
+.self-end
+  align-self: flex-end
+.self-baseline
+  align-self: baseline
+
+.text--center
+  text-align: center
+
+.mini-margin
+  margin-bottom: 20px

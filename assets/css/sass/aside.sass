@@ -1,0 +1,24 @@
+#aside
+  .aside-menu
+    padding-left: 0
+    background-image: linear-gradient(to bottom, $light-color, $medium-color)
+    border-radius: 0.222rem
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2)
+    line-height: 1.6
+    font-size: 0.8rem
+    margin: 0.5rem
+
+    a
+      display: inline-block
+      padding: 1rem
+
+      &:hover
+        background-image: linear-gradient(to bottom, $light-color, $medium-color)
+
+      &.active
+        background-image: linear-gradient(to bottom, $light-color, $medium-color)
+
+      &:first-child
+        border-radius: 0.222rem 0.222rem 0 0
+      &:last-child
+        border-radius: 0 0 0.222rem 0.222rem

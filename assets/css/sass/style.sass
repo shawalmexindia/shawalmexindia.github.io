@@ -1,0 +1,81 @@
+body
+  background: rgba(0, 0, 0, 0) url("/assets/images/black_background.png") repeat scroll 0% 0%
+
+  #sheet
+    border-width: 2px
+    margin: 50px auto
+    border-style: solid
+    border-color: #eee
+    background-color: #f8f8f8
+    box-shadow: 0px 1px 2px 0px rgba(27,29,32,.9),0px 10px 12px 0px rgba(27,29,32,.5),0px 20px 30px 0px rgba(27,29,32,.4),0px 0px 50px 0px rgba(27,29,32,.35)
+    max-width: 600px
+    padding: 100px 100px 0
+
+    @media screen and (max-width: 1024px)
+      margin: 0px auto
+      border-width: 0px
+
+    @media screen and (max-width: 767px)
+      padding: 50px 50px 0
+
+    @media screen and (max-width: 640px)
+      padding: 0 17px
+
+#site-body > article
+  margin-bottom: 2rem
+  border-bottom: 1px solid #eee
+
+.bttn, a.bttn
+  display: inline-block
+  font-size: 18px
+  line-height: 1.6rem
+  text-decoration: none
+  letter-spacing: 1px
+  font-style: normal
+
+  background-image: linear-gradient(-179deg,#fdfdfd 0%,#fbfbfb 100%)
+  box-shadow: inset 0px -1px 1px 0px rgba(105,105,105,.5), inset 0px 0px 0px 1px rgba(0,0,0,.15), 0px 1px 1px 0px rgba(0,0,0,.08)
+  border-radius: 8px
+  line-height: 21px
+  text-shadow: 0px 1px 1px #fff
+  padding: 10px 30px 10px 30px
+  border: 0px solid #000
+  color: #555 !important
+  outline: 0
+
+  &:hover
+    text-decoration: none
+    border-bottom: #eee
+    background-image: linear-gradient(-179deg,#fff 0%,#fcfcfc 100%)
+    outline: 0
+  &:active
+    background-image: linear-gradient(-180deg,#dcdcdc 0%,#f4f4f4 100%)
+    box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,.18),inset 0px 0px 0px 1px rgba(57,61,68,.25),inset 0px 2px 2px 0px rgba(152,152,152,.65),0px 1px 0px 0px #fff
+    outline: 0
+
+section > article
+  border-bottom: 1px solid #dcdcdc
+  margin-bottom: 20px
+  padding-bottom: 10px
+
+article
+  ul
+    margin-top: 0
+    padding-left: 14px
+  p
+    margin-top: 0
+    margin-bottom: 10px
+  h2
+    margin-top: 0
+    margin-bottom: 10px
+    a
+      color: #444 !important
+
+      &:hover
+        color: $link-color !important
+
+table
+  tr:nth-child(2n+1)
+    background-color: #eee
+  td
+    padding: 5px 10px
