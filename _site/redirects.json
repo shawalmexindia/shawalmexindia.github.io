@@ -1,1 +1,1 @@
-{"/lamination-presses":"/lamination-presses/3d-membrane-press/","/":"/vulcanizing-machine/heavy-duty-splicing-press/","/vulcanizing-machine":"/vulcanizing-machine/heavy-duty-splicing-press/"}
+{"/lamination-presses":"http://localhost:4000/lamination-presses/3d-membrane-press/","/vulcanizing-machine":"http://localhost:4000/vulcanizing-machine/heavy-duty-splicing-press/"}

@@ -1,81 +1,240 @@
-body
-  background: rgba(0, 0, 0, 0) url("/assets/images/black_background.png") repeat scroll 0% 0%
+.container
+  max-width: 1060px
+  padding: 0 20px
+  margin: 0 auto
+  @media screen and (max-width: 400px)
+    padding: 0 10px
 
-  #sheet
-    border-width: 2px
-    margin: 50px auto
-    border-style: solid
-    border-color: #eee
-    background-color: #f8f8f8
-    box-shadow: 0px 1px 2px 0px rgba(27,29,32,.9),0px 10px 12px 0px rgba(27,29,32,.5),0px 20px 30px 0px rgba(27,29,32,.4),0px 0px 50px 0px rgba(27,29,32,.35)
-    max-width: 600px
-    padding: 100px 100px 0
+main
+  @media screen and (min-width: 800px)
+    margin-top: 50px
+    .header--padding
+      display: block
+      height: 60px
+// Buttons
 
-    @media screen and (max-width: 1024px)
-      margin: 0px auto
-      border-width: 0px
-
-    @media screen and (max-width: 767px)
-      padding: 50px 50px 0
-
-    @media screen and (max-width: 640px)
-      padding: 0 17px
-
-#site-body > article
-  margin-bottom: 2rem
-  border-bottom: 1px solid #eee
-
-.bttn, a.bttn
+.bttn
+  background: none
+  border: 1px solid transparent
+  cursor: pointer
   display: inline-block
-  font-size: 18px
-  line-height: 1.6rem
-  text-decoration: none
-  letter-spacing: 1px
-  font-style: normal
-
-  background-image: linear-gradient(-179deg,#fdfdfd 0%,#fbfbfb 100%)
-  box-shadow: inset 0px -1px 1px 0px rgba(105,105,105,.5), inset 0px 0px 0px 1px rgba(0,0,0,.15), 0px 1px 1px 0px rgba(0,0,0,.08)
-  border-radius: 8px
-  line-height: 21px
-  text-shadow: 0px 1px 1px #fff
-  padding: 10px 30px 10px 30px
-  border: 0px solid #000
-  color: #555 !important
+  font-family: inherit
+  line-height: normal
+  vertical-align: middle
+  white-space: nowrap
+  transition: all 120ms ease-in-out
+  padding: 10px 30px
   outline: 0
-
+  font-size: 18px
   &:hover
+    cursor: pointer
     text-decoration: none
-    border-bottom: #eee
-    background-image: linear-gradient(-179deg,#fff 0%,#fcfcfc 100%)
-    outline: 0
+  &:active, &:focus
+    outline: none
+  &:disabled
+    opacity: 0.6
   &:active
-    background-image: linear-gradient(-180deg,#dcdcdc 0%,#f4f4f4 100%)
-    box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,.18),inset 0px 0px 0px 1px rgba(57,61,68,.25),inset 0px 2px 2px 0px rgba(152,152,152,.65),0px 1px 0px 0px #fff
-    outline: 0
+    transform: translateY(1px)
 
-section > article
-  border-bottom: 1px solid #dcdcdc
-  margin-bottom: 20px
-  padding-bottom: 10px
+  &.bttn--transparent
+    background-color: none
+    border: 1px solid $eggplant-color
+    color: $eggplant-color
+    opacity: .9
+    &:hover
+      opacity: 1
+      background-color: $eggplant-color
+      color: #fff
+    &:active
+      background-color: $eggplant-color, 70%
 
-article
-  ul
-    margin-top: 0
-    padding-left: 14px
-  p
-    margin-top: 0
-    margin-bottom: 10px
-  h2
-    margin-top: 0
-    margin-bottom: 10px
-    a
-      color: #444 !important
+  &.cta
 
-      &:hover
-        color: $link-color !important
+    background-color: $accent-color
+    box-shadow: rem-calc(0) rem-calc(1) rem-calc(0) rem-calc(0) darken($accent-color, 15%)
+    color: #fff
+    &:hover
+      background-color: darken($accent-color, 6%)
+      color: #fff
+    &:active, &:focus
+      box-shadow: inset rem-calc(0) rem-calc(1) rem-calc(0) rem-calc(0) darken($accent-color, 15%)
+
+
+// ******************************************
+//
+// Hompage hero section
+//
+// ******************************************
+
+#hero
+  color: #111
+  background-color: #ddd
+  background-image: url(/assets/images/hero--bg.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center center
+  .inner
+    min-height: 500px
+
+    .content
+      padding: 0 1rem 0 2rem
+      margin-bottom: 20px
+      margin-top: 20px
+      max-width: 500px
+      background-color: #fcfcfc
+
+      > h2
+        display: inline-block
+        max-width: 500px
+        margin-bottom: 0
+        color: #111
+
+      > p
+        display: inline-block
+        max-width: 400px
+        margin: 0 0 15px 0
+        color: #444
+    @media screen and (max-width: 600px)
+      min-height: 300px
+
+// Homepage our products section
+.our-products
+  // background-color: #ededed
+  // border-bottom: 1px solid #ddd
+  padding: 2rem 0
+
+// Homepage about us section
+.about-us
+  padding: 2rem 0
+  background-image: linear-gradient(to bottom, #eee, #fff)
+  border-top: 1px solid #ddd
+
+.thank-you
+  .container
+    max-width: 600px
+
+// Homepage case studies section
+.case-studies
+  padding: 2rem 0
+
+  @media screen and (min-width: 600px)
+    .text, .promo
+      max-width: 48%
+      iframe
+        max-width: 100%
+
+// Case studies page
+#case-studies
+  .case-study
+    .image
+      margin: 0
+      @media screen and (min-width: 600px)
+        width: 20%
+        margin: 10px 1rem 1rem 0
+
+    .content
+      width: 100%
+      h3
+        color: darken($eggplant-color, 5%)
+      @media screen and (min-width: 600px)
+        width: calc(80% - 1rem)
+
+
+// About us page
+#about-us
+  .inner h3
+    text-decoration: underline
+    text-decoration-style: double
+
+// Products page
+.products
+  .inner > h2
+    text-decoration: underline
+    text-decoration-style: double
+  .item
+    &:hover
+      .cover
+        opacity: 0.8
+      h3 a
+        text-decoration: underline
+    h3 a
+      text-decoration: none
+    @media screen and (min-width: 600px)
+      max-width: 48%
+
+// Product page
+article.product
+  .container
+    max-width: 800px
+
+// Contact form
+.contact-form
+  .form--wrapper, .addresses
+    @media screen and (min-width: 600px)
+      width: 48%
+  textarea
+    resize: none
+
+.form-label
+  font-size: 12px
+  color: #5e9bfc
+  margin: 0
+  display: block
+  opacity: 1
+  -webkit-transition: .333s ease top, .333s ease opacity
+  transition: .333s ease top, .333s ease opacity
+
+.form-control
+  border-radius: 0
+  border-color: #ccc
+  border-width: 0 0 2px 0
+  border-style: none none solid none
+  box-shadow: none
+  width: 100%
+.form-control:focus
+  box-shadow: none
+  border-color: #5e9bfc
+.js-hide-label
+  opacity: 0
+
+.js-unhighlight-label
+  color: #999
+
+.btn-start-order
+  background: 0 0 #ffffff
+  border: 1px solid #2f323a
+  border-radius: 3px
+  color: #2f323a
+  // font-family: "Raleway", sans-serif;
+  font-size: 16px
+  line-height: inherit
+  margin: 30px 0
+  padding: 10px 50px
+  text-transform: uppercase
+  transition: all 0.25s ease 0s
+  cursor: pointer
+  .btn-start-order:hover,.btn-start-order:active, .btn-start-order:focus
+    border-color: #5e9bfc
+    color: #5e9bfc
+
+// Tables
 
 table
   tr:nth-child(2n+1)
     background-color: #eee
   td
     padding: 5px 10px
+
+[data-aos="fade-up"]
+  opacity: 0
+  transition-property: transform, opacity
+
+  transform: translateY(20px)
+
+  &.aos-animate
+    opacity: 1
+  @media screen and (min-width: 768px)
+    transform: translateY(10px)
+
+    &.aos-animate
+      transform: translateY(0)

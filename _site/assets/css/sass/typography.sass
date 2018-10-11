@@ -1,8 +1,19 @@
 body
-  font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif
-  font-size: 16px
-  color: #444
+  font-family: 'Lato', sans-serif
+  font-size: 18px
+  color: #666
   line-height: 1.5
+
+  a
+    text-decoration: none
+    color: $link-color
+
+    &:hover
+      text-decoration: underline
+      color: $link-color
+
+    &:visited
+      color: $link-color
 
   ul
     line-height: 1.5
@@ -19,13 +30,10 @@ body
   h4
     font-size: 1.563rem
 
-a
-  text-decoration: none
-  color: $link-color
-
-  &:hover
-    text-decoration: underline
-    color: $link-color
-
-  &:visited
-    color: $link-color
+  h1, h2, h3, h4
+    font-family: 'Oswald', sans-serif
+    letter-spacing: 1px
+    color: darken($eggplant-color, 5%)
+    a
+      color: darken($eggplant-color, 5%) !important
+      text-decoration: underline

@@ -1,17 +1,17 @@
-<header id="site-header" class="mini-margin">
-  <div class="row flex flex-center">
-    <div class="logo">
-      <a href="/"><img src="/assets/images/logo.png" alt=""></a>
+<header id="site-header">
+  <div class="container">
+    <div class="inner flex flex-between flex-ycenter">
+      <div id="site-logo">
+        <a href="/"><img src="/assets/images/logo.png" alt=""></a>
+      </div>
+      <nav id="site-navigation">
+          <ul class="menu">
+            <a class="{% if page.url contains 'products' %} active {% endif %}" href="{{ "/products/" | absolute_url }}">Our Products</a>
+            <a class="{% if page.url contains 'case-studies' %} active {% endif %}" href="{{ "/case-studies/" | absolute_url }}">Case Studies</a>
+            <a class="{% if page.url contains 'about-us' %} active {% endif %}" href="{{ "/about-us/" | absolute_url }}">About Us</a>
+            <a class="{% if page.url contains 'contact-us' %} active {% endif %}" href="{{ "/contact-us/" | absolute_url }}">Contact Us</a>
+          </ul>
+      </nav>
     </div>
   </div>
 </header>
-
-<nav id="site-navigation">
-    <ul class="menu">
-      <a class="{% if page.url contains "vulcanizing-machine" %} active {% endif %}" href="{{ "/vulcanizing-machine/heavy-duty-splicing-press/" | absolute_url }}">Vulcanizing Machine</a>
-      <a class="{% if page.url contains '/industrial-rubber-press/' %} active {% endif %}" href="{{ "/industrial-rubber-press/" | absolute_url }}">Industrial Rubber Press</a>
-      <a class="{% if page.url contains '/lamination-presses/' %} active {% endif %}" href="{{ "/lamination-presses/3d-membrane-press" | absolute_url }}">Lamination Process</a>
-      <a class="{% if page.url contains '/tools-and-accessories/' %} active {% endif %}" href="{{ "/tools-and-accessories/" | absolute_url }}">Tools & Accesories</a>
-      <a class="{% if page.url contains '/contact/' %} active {% endif %}" href="{{ "/contact/" | absolute_url }}">Contact</a>
-    </ul>
-</nav>
