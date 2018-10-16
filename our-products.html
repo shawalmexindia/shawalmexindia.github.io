@@ -3,65 +3,33 @@ layout: page
 title: Our Products
 permalink: /products/
 ---
-
+<div class="product-categories-page">
 <div class="header--padding"></div>
 
-<section class="products">
+<section class="product-categories">
   <div class="container">
-    <div class="inner">
-      <h1>{{ page.title }}</h1>
-      <h2 class="mini-margin">Vulcanizing Machine</h2>
-      <div class="content flex flex-wrap flex-between mini-margin">
-        {% for post in site.vulcanizing_machine %}
-          <div class="item mini-margin" data-aos="fade-up" data-aos-duration="600">
-            <div class="cover micro-margin">
-              <img src="{{ post.image }}" alt="">
-            </div>
-            <h3 class="flush--top micro-margin"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-            {{ post.short_desc | markdownify }}
-            <p><a class="bttn bttn--transparent" href="{{ post.url }}">Read More</a></p>
-          </div>
-        {% endfor %}
-      </div>
-      <h2 class="mini-margin">Industrial Rubber Press</h2>
-      <div class="content flex flex-wrap flex-between mini-margin">
-        {% for post in site.industrial_rubber_press %}
-          <div class="item mini-margin" data-aos="fade-up" data-aos-duration="600">
-            <div class="cover micro-margin">
-              <img src="{{ post.image }}" alt="">
-            </div>
-            <h3 class="flush--top micro-margin"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-            {{ post.short_desc | markdownify }}
-            <p><a class="bttn bttn--transparent" href="{{ post.url }}">Read More</a></p>
-          </div>
-        {% endfor %}
-      </div>
-      <h3 class="mini-margin">Lamination Presses</h2>
-      <div class="content flex flex-wrap flex-between mini-margin">
-        {% for post in site.lamination_presses %}
-          <div class="item mini-margin" data-aos="fade-up" data-aos-duration="600">
-            <div class="cover micro-margin">
-              <img src="{{ post.image }}" alt="">
-            </div>
-            <h3 class="flush--top micro-margin"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-            {{ post.short_desc | markdownify }}
-            <p><a class="bttn bttn--transparent" href="{{ post.url }}">Read More</a></p>
-          </div>
-        {% endfor %}
-      </div>
-      <h2 class="mini-margin">Tools & Accesories</h2>
-      <div class="content flex flex-wrap flex-between mini-margin">
-        {% for post in site.tools_and_accessories %}
-          <div class="item mini-margin" data-aos="fade-up" data-aos-duration="600">
-            <div class="cover micro-margin">
-              <img src="{{ post.image }}" alt="">
-            </div>
-            <h3 class="flush--top micro-margin"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-            {{ post.short_desc | markdownify }}
-            <p><a class="bttn bttn--transparent" href="{{ post.url }}">Read More</a></p>
-          </div>
-        {% endfor %}
-      </div>
+    <h2>Our Products</h2>
+    <div class="inner flex palm-flex-column flex-between">
+      <a href="/products/conveyor-belt-vulcanizers/" class="product-categories--card mini-margin flex flex-column">
+        <div class="cover flex flex-center">
+          <img src="/assets/images/conveyor-belt-vulcanizers.jpg" alt="">
+        </div><!--
+        --><div class="text">
+          <p class="flush--bottom head">Conveyor Belt Vulcanizers</p>
+          <p>Almex conveyor belt Vulcanizing Presses are built to hot splice all types of conveyor belts. Almex Heavyweight vulcanizing presses splice fabric ply and steelcord conveyor belts. Almex Lightweight presses are used for PVC, Polyurethane, and Polyester Mono filament synthetic belting. Both vulcanizer divisions offer a continually expanding menu of ancillary items including belt splicing tools, belt specific tool kits, conveyor accessories, and other splice tools.</p>
+        </div>
+      </a>
+      <a class="product-categories--card mini-margin flex flex-column">
+        <div class="cover flex flex-center">
+          <img src="/assets/images/repair-products.png" alt="">
+        </div><!--
+        --><div class="text">
+          <p class="flush--bottom head">Repair & Abrasion Products</p>
+          <p>The Almex Group Fusion Systems Canada provides a single global source for a comprehensive line of pulley lagging, cold bond splicing material and repair materials. The Almex Fusion lining, impact, wear and corrosion protection products reduce maintenance costs associated with abrasion damage to key components of conveyor belt systems.</p>
+        </div>
+      </a>
     </div>
   </div>
 </section>
+<div class="header--padding"></div>
+</div>

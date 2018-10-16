@@ -40,3 +40,8 @@ $(document).ready(function() {
         });
     }
 });
+$mobileNavButton = $('#mobile-nav-button');
+$mobileNavButton.on('click', function() {
+  $mobileNavButton.toggleClass('active');
+  $('#mobile-site-navigation').toggleClass('active');
+});

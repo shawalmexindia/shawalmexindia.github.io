@@ -12,6 +12,27 @@
             <a class="{% if page.url contains 'contact-us' %} active {% endif %}" href="{{ "/contact-us/" | absolute_url }}">Contact Us</a>
           </ul>
       </nav>
+      <a href="javascript:void(0)" id="mobile-nav-button"><svg viewbox="0 0 64 64">
+    <line id="nav-line-1" x1="8" x2="56" y1="16" y2="16" class="nav-line" />
+    <line id="nav-line-2" x1="8" x2="56" y1="32" y2="32" class="nav-line" />
+    <line id="nav-line-3" x1="8" x2="56" y1="48" y2="48" class="nav-line" />
+
+    <line x1="16" x2="48" y1="16" y2="48" class="cross-line" />
+    <line x1="16" x2="48" y1="48" y2="16" class="cross-line" />
+
+
+    <rect class="rect" width="42" height="42" x="11" y="11" />
+  </svg></a>
+      <nav id="mobile-site-navigation">
+          <ul class="menu">
+            <p>MENU</p>
+            <a class="{% if page.url contains 'products' %} active {% endif %}" href="{{ "/products/" | absolute_url }}">Our Products</a>
+            <a class="{% if page.url contains 'case-studies' %} active {% endif %}" href="{{ "/case-studies/" | absolute_url }}">Case Studies</a>
+            <a class="{% if page.url contains 'about-us' %} active {% endif %}" href="{{ "/about-us/" | absolute_url }}">About Us</a>
+            <a class="{% if page.url contains 'contact-us' %} active {% endif %}" href="{{ "/contact-us/" | absolute_url }}">Contact Us</a>
+          </ul>
+      </nav>
+
     </div>
   </div>
 </header>

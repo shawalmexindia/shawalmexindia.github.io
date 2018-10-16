@@ -1,3 +1,5 @@
+body
+  overflow-x: hidden
 .container
   max-width: 1060px
   padding: 0 20px
@@ -124,6 +126,9 @@ main
         max-width: 100%
 
 // Case studies page
+.case-studies-page
+  background-image: linear-gradient(to bottom, #fff, #fcfcfc)
+
 #case-studies
   .case-study
     .image
@@ -146,6 +151,9 @@ main
     text-decoration: underline
     text-decoration-style: double
 
+  p
+    line-height: 1.6
+
 // Products page
 .products
   .inner > h2
@@ -162,6 +170,51 @@ main
     @media screen and (min-width: 600px)
       max-width: 48%
 
+.product-categories-page
+  background-image: linear-gradient(to bottom, #fff, #ececec)
+.product-categories
+  .product-categories--card
+    display: block
+    border: 1px solid #ddd
+    background-color: #fcfcfc
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2)
+    border-radius: 4px
+    padding: 2rem
+    display: flex
+    @media screen and (min-width: 600px)
+      margin: 1rem
+      max-width: 42%
+
+    &:hover
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2)
+      cursor: pointer
+      text-decoration: none
+
+    .cover
+      // display: inline-block
+      height: 225px
+      border-radius: 0.222rem
+      @extend .flush--bottom
+      // margin-right: 1.5rem
+      background-image: linear-gradient(to bottom, #dcdcdc, #eee)
+      border: 1px solid #ddd
+      img
+        border: 1px solid $eggplant-color
+        padding: 0.5rem
+        border-radius: 0.222rem
+        background-color: #fff
+
+    .text
+      // display: inline-block
+      .head
+        font-weight: bold
+        font-size: 1rem
+
+      p
+        color: #444
+        font-size: 0.8rem
+
+
 // Product page
 article.product
   .container
@@ -174,6 +227,9 @@ article.product
       width: 48%
   textarea
     resize: none
+  .addresses
+    .list > div
+      @extend .micro-margin
 
 .form-label
   font-size: 12px
