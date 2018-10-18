@@ -1,3 +1,13 @@
+github: [metadata]
+encoding: UTF-8
+kramdown:
+  input: GFM
+  hard_wrap: false
+future: true
+jailed: false
+theme: jekyll-theme-primer
+gfm_quirks: paragraph_end
+
 title: Shaw Almex
 email: shaw@almexindia.com
 phone: +91-129-2258676, +91-129-2274624
