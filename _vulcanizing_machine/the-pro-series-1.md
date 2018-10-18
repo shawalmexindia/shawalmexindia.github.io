@@ -25,3 +25,7 @@ Discover these great technical benefits.
 - Uniform pressure ,with the unique ALMEX pressure bag and flexible platen system
 - Guarantees a strong, long lasting splice.
 - Drop down bolts.
+
+[Pro Series Product Sheet](http://almex.com/file_download/4/PRO+Spec+Sheet+L.pdf)
+
+[Pro Series Spec Sheet](http://almex.com/file_download/99/PRO+Spec+Sheet.pdf)

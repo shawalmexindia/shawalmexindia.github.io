@@ -9,9 +9,6 @@ sass:
   sass_dir: assets/css
   style: compressed
 
-plugins:
-  - jekyll-redirect-from
-
 collections:
   vulcanizing_machine:
     output: true
