@@ -26,6 +26,6 @@ Discover these great technical benefits.
 - Guarantees a strong, long lasting splice.
 - Drop down bolts.
 
-[Pro Series Product Sheet](http://almex.com/file_download/4/PRO+Spec+Sheet+L.pdf)
-
-[Pro Series Spec Sheet](http://almex.com/file_download/99/PRO+Spec+Sheet.pdf)
+Downloads:
+- [Pro Series Product Sheet](http://almex.com/file_download/4/PRO+Spec+Sheet+L.pdf)
+- [Pro Series Spec Sheet](http://almex.com/file_download/99/PRO+Spec+Sheet.pdf)
