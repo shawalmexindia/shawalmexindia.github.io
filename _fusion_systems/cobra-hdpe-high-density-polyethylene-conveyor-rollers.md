@@ -2,7 +2,7 @@
 layout: product
 title: Cobra HDPE High Density Polyethylene Conveyor Rollers
 categories: [hdpe-rollers]
-permalink: /fusion-systems/hot-splice/cobra-hdpe-high-density-polyethylene-conveyor-rollers/
+permalink: /fusion-systems/hdpe-rollers/cobra-hdpe-high-density-polyethylene-conveyor-rollers/
 image: /images/cobra-hdpe-high-density-polyethylene-conveyor-rollers.png
 short_desc: |
   A robust, long-lasting conveyor belt idler from Almex. This uniquely designed roller incorporates a sealing arrangement, bearing, seal housing and roller shell.
@@ -65,5 +65,4 @@ We have also touched on this subject in point 1. Due to the higher coefficient o
 8. Mortimer Smelter – Union Mine Anglo American
 
 ![](/images/cobra-hdpe-high-density-polyethylene-conveyor-rollers-diagram.png)
-
 ![](/images/cobra-hdpe-high-density-polyethylene-conveyor-rollers-diagram-2.png)
