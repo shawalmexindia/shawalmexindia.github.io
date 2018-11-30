@@ -139,9 +139,6 @@ Properties:
 			<td>18</td>
 			<td>39.6</td>
 		</tr>
-		<tr>
-			<td colspan="11"><a href="http://www.almex.com/file_download/92/SteelCordBeltCableGum.pdf" class="pdf">Steel Cord Belt Cable Gum Product Sheet</a> </td>
-		</tr>
 	</tbody></table>
 
 Downloads:

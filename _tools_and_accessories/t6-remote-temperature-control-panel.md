@@ -1,8 +1,8 @@
 ---
 layout: product
-title: T3 Remote Temperature Control Panel
+title: T6 Remote Temperature Control Panel
 categories: []
-permalink: /tools-and-accessories/t3-remote-temperature-control-panel/
+permalink: /tools-and-accessories/t6-remote-temperature-control-panel/
 image: /images/t3remote.jpg
 short_desc: |
   - Sturdy, lightweight rugged aluminum housing with cover and handle/stand.

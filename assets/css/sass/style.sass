@@ -68,13 +68,82 @@ main
 //
 // ******************************************
 
+// 90 - 15
+@keyframes bgFadeInOut
+  0%
+    opacity: 1
+  12%
+    opacity: 1
+  18%
+    opacity: 0
+  87%
+    opacity: 0
+  93%
+    opacity: 1
+
+
+// 15 - 40
+@keyframes bgFadeInOut1
+  12%
+    opacity: 0
+  18%
+    opacity: 1
+  37%
+    opacity: 1
+  43%
+    opacity: 0
+
+// 40 - 65
+@keyframes bgFadeInOut2
+  37%
+    opacity: 0
+  43%
+    opacity: 1
+  62%
+    opacity: 1
+  68%
+    opacity: 0
+
+// 65 - 90
+@keyframes bgFadeInOut3
+  62%
+    opacity: 0
+  68%
+    opacity: 1
+  87%
+    opacity: 1
+  93%
+    opacity: 0
+
+
 #hero
   color: #111
   background-color: #ddd
-  background-image: url(/assets/images/hero--bg.jpg)
-  background-repeat: no-repeat
-  background-size: cover
-  background-position: center center
+  position: relative
+  .bg
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    opacity: 0
+    &.bg--1
+      opacity: 1
+      background-image: url(/assets/images/hero--bg.jpg)
+      animation: bgFadeInOut 40s linear infinite
+    &.bg--2
+      background-image: url(/assets/images/hero--bg-1.jpg)
+      animation: bgFadeInOut1 40s linear infinite
+    &.bg--3
+      background-image: url(/assets/images/hero--bg-2.jpg)
+      animation: bgFadeInOut2 40s linear infinite
+    &.bg--4
+      background-image: url(/assets/images/hero--bg-3.jpg)
+      animation: bgFadeInOut3 40s linear infinite
+
   .inner
     min-height: 500px
 
@@ -156,9 +225,6 @@ main
 
 // Products page
 .products
-  .inner > h2
-    text-decoration: underline
-    text-decoration-style: double
   .item
     &:hover
       .cover
@@ -169,6 +235,12 @@ main
       text-decoration: none
     @media screen and (min-width: 600px)
       max-width: 48%
+  .content
+    .cover
+      max-height: 208px
+      overflow: hidden
+      img
+        max-height: 208px
 
 .product-categories-page
   background-image: linear-gradient(to bottom, #fff, #ececec)

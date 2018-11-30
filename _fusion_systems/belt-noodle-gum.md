@@ -72,9 +72,6 @@ Properties:
 			<td>.25</td>
 			<td>.6</td>
 		</tr>
-		<tr>
-			<td colspan="11"><a href="http://www.almex.com/file_download/54/BeltNoodleGum.pdf" class="pdf">Belt Noodle Gum Product Sheet</a> </td>
-		</tr>
 	</tbody></table>
 
 Downloads:

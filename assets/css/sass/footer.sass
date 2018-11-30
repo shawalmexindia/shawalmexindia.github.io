@@ -2,3 +2,32 @@
   padding: 2rem 0 1rem
   background-color: #130614
   color: #fff
+  border-top: 20px solid #ddd
+
+  .inner
+    > div
+      margin: 10px
+      &:nth-child(1)
+        > span
+          display: inline-block
+          padding: 1rem
+          background-color: #fff
+          border-radius: 4px
+        @media (min-width: 800px)
+          flex: 2
+          align-self: center
+      &:nth-child(2)
+        @media (min-width: 800px)
+          flex: 3
+      &:nth-child(3)
+        p > span
+          display: inline-flex
+          flex-wrap: nowrap
+          justify-content: center
+          align-items: center
+          height: 55px
+          width: 110px
+          border-radius: 2px
+          background-color: #fff
+        @media (min-width: 800px)
+          flex: 3

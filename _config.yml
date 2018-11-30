@@ -5,8 +5,6 @@ kramdown:
   hard_wrap: false
 future: true
 jailed: false
-theme: jekyll-theme-primer
-gfm_quirks: paragraph_end
 
 title: Shaw Almex
 email: shaw@almexindia.com

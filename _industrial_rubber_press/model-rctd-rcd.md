@@ -3,7 +3,7 @@ layout: product
 title: Model RCTD/RCD
 categories:
 permalink: /industrial-rubber-press/model-rctd-rcd/
-image: /images/model-rctd-rcd.gif
+image: /images/model-rctd-rcd.jpg
 short_desc: |
   Lighter window frames compared to bulky hydraulic pressure due to uniform load distribution. Top/bottom blosters holding the platens are welded steel construction. The top or bottom frame can be made floating depending upon the customer's requirement.
 ---
